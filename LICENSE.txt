@@ -1,0 +1,14 @@
+/**
+ * Package    	z_mb_socialize
+ * Copyright  	mediabakery 2012
+ * Author       Sebastian Tilch
+ * Link         http://www.mediabakery.de
+ * License    	GNU/LGPL
+ */
+ 
+/**
+ * Package    	facebook-php-sdk
+ * Copyright  	2011 Facebook, Inc.
+ * Link         http://developers.facebook.com
+ * License    	Apache License, Version 2.0
+ */
