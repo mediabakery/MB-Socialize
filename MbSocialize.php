@@ -287,7 +287,7 @@ class MbSocialize extends Backend
 				}
 				else
 				{
-					return $this->Environment->host . ampersand($objNewsItem->url);
+					return $this->Environment->host . '/' .ampersand($objNewsItem->url);
 				}
 				break;
 
@@ -297,7 +297,7 @@ class MbSocialize extends Backend
 
 				if($objPage->numRows)
 				{
-					return $this->Environment->host . ampersand($this->generateFrontendUrl($objPage->row()));
+					return $this->Environment->host . '/' .ampersand($this->generateFrontendUrl($objPage->row()));
 				}
 				break;
 
@@ -307,7 +307,7 @@ class MbSocialize extends Backend
 
 				if($objPage->numRows)
 				{
-					return $this->Environment->host . ampersand($this->generateFrontendUrl($objPage->row(), '/articles/' . ((!$GLOBALS['TL_CONFIG']['disableAlias'] && $objPage->aAlias != '') ? $objPage->aAlias : $objPage->aId)));
+					return $this->Environment->host . '/' .ampersand($this->generateFrontendUrl($objPage->row(), '/articles/' . ((!$GLOBALS['TL_CONFIG']['disableAlias'] && $objPage->aAlias != '') ? $objPage->aAlias : $objPage->aId)));
 				}
 				break;
 		}
@@ -317,7 +317,7 @@ class MbSocialize extends Backend
 
 		if($objPage->numRows)
 		{
-			return $this->Environment->host . ampersand($this->generateFrontendUrl($objPage->row()));
+			return $this->Environment->host . '/' .ampersand($this->generateFrontendUrl($objPage->row()));
 		}
 
 		return $this->Environment->host;
